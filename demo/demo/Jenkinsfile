@@ -11,7 +11,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                cd C:\ProgramData\Jenkins\.jenkins\workspace\Build and Test Spring Boot Application\demo\demo
+                cd C:/ProgramData/Jenkins/.jenkins/workspace/Build and Test Spring Boot Application/demo/demo
                 bat 'mvn clean package'
             }
         }
