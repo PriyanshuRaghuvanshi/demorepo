@@ -11,14 +11,13 @@ pipeline {
         
         stage('Build') {
             steps {
-                cd C:/ProgramData/Jenkins/.jenkins/workspace/Build and Test Spring Boot Application/demo/demo
-                bat 'mvn clean package'
+                bat 'mvn clean package demo/demo/pom.xml'
             }
         }
         
         stage('Test') {
             steps {
-                bat 'mvn test'
+                bat 'mvn test demo/demo/pom.xml'
             }
         }
     }
