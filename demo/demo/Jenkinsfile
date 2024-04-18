@@ -11,13 +11,13 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'mvn clean package -f Build and Test Spring Boot Application/demo/demo/pom.xml'
+                bat 'mvn clean package -f demo/demo/pom.xml'
             }
         }
         
         stage('Test') {
             steps {
-                sh 'mvn test -f Build and Test Spring Boot Application/demo/demo/pom.xml'
+                bat 'mvn test -f demo/demo/pom.xml'
             }
         }
     }
